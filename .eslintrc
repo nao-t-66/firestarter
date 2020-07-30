@@ -1,0 +1,22 @@
+{
+  "extends": "eslint",
+  "env": {
+    "es6" : true,
+    "browser": true,
+    "node": true,
+    "jquery": true
+  },
+  "rules": {
+    "semi": ["error", "never"],
+    "no-console": "off",
+    "indent": ["error", 2],
+    "strict": "off",
+    "quotes": ["error", "single"],
+    "comma-dangle": ["error", "always"],
+    "require-jsdoc": "off",
+    "lines-around-comment": ["error", {"allowObjectStart": true}]
+  },
+  "parserOptions": {
+      "sourceType": "module"
+  }
+}

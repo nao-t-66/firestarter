@@ -1,0 +1,47 @@
+doctype html
+html(lang='ja')
+  block vars
+
+  block head
+    head
+      meta(charset="utf-8")
+      meta(name="viewport" content="width=device-width,initial-scale=1")
+      title !{title}
+      
+      meta(property="og:title" content=title)
+      meta(property="og:url" content=url)
+      meta(property="og:image" content="")
+
+      link(href="/assets/css/index.css", type="text/css", rel="stylesheet")
+  body
+
+    //- 以下スクリプトはFirebase SDK導入用のダミー
+    //- 利用するサービスに応じて、スクリプトを変更する
+    //- .
+    //-   <!-- The core Firebase JS SDK is always required and must be listed first -->
+    //-   <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+    //-   <!-- TODO: Add SDKs for Firebase products that you want to use
+    //-       https://firebase.google.com/docs/web/setup#available-libraries -->
+    //-   <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+    //-   <script>
+    //-     // Your web app's Firebase configuration
+    //-     var firebaseConfig = {
+    //-       apiKey: "",
+    //-       authDomain: "",
+    //-       databaseURL: "",
+    //-       projectId: "",
+    //-       storageBucket: "",
+    //-       messagingSenderId: "",
+    //-       appId: "",
+    //-       measurementId: ""
+    //-     };
+    //-     // Initialize Firebase
+    //-     firebase.initializeApp(firebaseConfig);
+    //-     firebase.analytics();
+    //-   </script>
+
+    block main
+
+script(type="text/javascript" src="/assets/scripts/app.js")

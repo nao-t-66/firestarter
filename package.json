@@ -1,0 +1,37 @@
+{
+  "name": "firestarter",
+  "version": "1.0.0",
+  "description": "dev-env package for web development with firebase",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp publish",
+    "clean": "rimraf public",
+    "cleanbuild": "npm-run-all clean build",
+    "deploy": "firebase deploy",
+    "publish": "npm-run-all cleanbuild deploy"
+  },
+  "author": "nao.t",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.10",
+    "eslint": "^7.5.0",
+    "eslint-config-eslint": "^6.0.0",
+    "eslint-loader": "^4.0.2",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-changed": "^4.0.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-stylus": "^2.7.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "webpack": "^4.44.0",
+    "webpack-stream": "^5.2.1"
+  }
+}
